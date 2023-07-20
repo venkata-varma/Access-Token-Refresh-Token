@@ -1,0 +1,8 @@
+1. Through Some Videos other than my UDEMY course-work, Here,  I have implemented Token Invalidation at the time of User-Logout.
+2. Storing JWT token in Local storage or to send through Headers is prone to XSS attacks and other Hacker attacks; So, to store JWT tokens in
+    Cookie which is (HTTP-ONLY); not (LAX) is safe sometimes, which depends upon Project requirement.
+3. As a single Token for Login Authorisation is prone to attack as even though if it expires, a sample of it exists which is prone to attack. 
+    So, Solution is to create Access-token with shorter duration and a another token (Refresh token ) with Longer duration which is also stored in
+    database and Cookie
+4.  So, that Refresh token is used to generate Access token everytime it is expired. So, this is how hacker has no time left to hack a complete system. 
+5. Need help of Front-end so thatto understand how front-end design is made .
